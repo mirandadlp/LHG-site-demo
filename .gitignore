@@ -42,3 +42,6 @@ next-env.d.ts
 
 # example environment file is safe to commit
 !.env.example
+
+# standalone HTML export (npm run export:html)
+/html-export
