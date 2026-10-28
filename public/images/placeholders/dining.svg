@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder image">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.07"/></feComponentTransfer>
+    <feBlend in2="SourceGraphic" mode="multiply"/>
+  </filter>
+  <radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.28"/>
+  </radialGradient><linearGradient id="dwall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#173b2c"/><stop offset="1" stop-color="#0d261c"/></linearGradient>
+     <radialGradient id="pglow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd38f" stop-opacity="0.55"/><stop offset="1" stop-color="#ffd38f" stop-opacity="0"/></radialGradient></defs>
+<g filter="url(#grain)"><rect width="1600" height="1000" fill="url(#dwall)"/>
+     <rect x="0" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="80" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="160" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="240" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="320" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="400" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="480" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="560" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="640" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="720" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="800" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="880" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="960" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1040" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1120" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1200" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1280" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1360" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1440" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/><rect x="1520" y="0" width="2" height="600" fill="#b59a68" opacity="0.18"/>
+     <rect x="0" y="560" width="1600" height="200" fill="#1f4a37"/>
+     <rect x="6" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="106" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="206" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="306" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="406" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="506" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="606" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="706" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="806" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="906" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1006" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1106" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1206" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1306" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1406" y="575" width="88" height="170" rx="40" fill="#24543f"/><rect x="1506" y="575" width="88" height="170" rx="40" fill="#24543f"/>
+     <rect x="0" y="760" width="1600" height="240" fill="#3b2b1f"/>
+     <line x1="0" y1="760" x2="-200" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="60" y1="760" x2="-140" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="120" y1="760" x2="-80" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="180" y1="760" x2="-20" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="240" y1="760" x2="40" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="300" y1="760" x2="100" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="360" y1="760" x2="160" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="420" y1="760" x2="220" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="480" y1="760" x2="280" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="540" y1="760" x2="340" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="600" y1="760" x2="400" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="660" y1="760" x2="460" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="720" y1="760" x2="520" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="780" y1="760" x2="580" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="840" y1="760" x2="640" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="900" y1="760" x2="700" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="960" y1="760" x2="760" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1020" y1="760" x2="820" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1080" y1="760" x2="880" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1140" y1="760" x2="940" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1200" y1="760" x2="1000" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1260" y1="760" x2="1060" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1320" y1="760" x2="1120" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1380" y1="760" x2="1180" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1440" y1="760" x2="1240" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1500" y1="760" x2="1300" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1560" y1="760" x2="1360" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1620" y1="760" x2="1420" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1680" y1="760" x2="1480" y2="1000" stroke="#2b1f16" stroke-width="2"/><line x1="1740" y1="760" x2="1540" y2="1000" stroke="#2b1f16" stroke-width="2"/>
+     <line x1="260" y1="0" x2="260" y2="300" stroke="#b59a68" stroke-width="3"/>
+        <circle cx="260" cy="330" r="120" fill="url(#pglow)"/>
+        <path d="M214 330 a46 46 0 0 1 92 0 z" fill="#d8b778"/><line x1="540" y1="0" x2="540" y2="300" stroke="#b59a68" stroke-width="3"/>
+        <circle cx="540" cy="330" r="120" fill="url(#pglow)"/>
+        <path d="M494 330 a46 46 0 0 1 92 0 z" fill="#d8b778"/><line x1="820" y1="0" x2="820" y2="300" stroke="#b59a68" stroke-width="3"/>
+        <circle cx="820" cy="330" r="120" fill="url(#pglow)"/>
+        <path d="M774 330 a46 46 0 0 1 92 0 z" fill="#d8b778"/><line x1="1100" y1="0" x2="1100" y2="300" stroke="#b59a68" stroke-width="3"/>
+        <circle cx="1100" cy="330" r="120" fill="url(#pglow)"/>
+        <path d="M1054 330 a46 46 0 0 1 92 0 z" fill="#d8b778"/><line x1="1380" y1="0" x2="1380" y2="300" stroke="#b59a68" stroke-width="3"/>
+        <circle cx="1380" cy="330" r="120" fill="url(#pglow)"/>
+        <path d="M1334 330 a46 46 0 0 1 92 0 z" fill="#d8b778"/><ellipse cx="380" cy="720" rx="110" ry="26" fill="#c9b48c"/>
+        <rect x="372" y="720" width="16" height="140" fill="#3a2c1e"/>
+        <ellipse cx="380" cy="860" rx="60" ry="12" fill="#2a2016"/>
+        <rect x="355" y="680" width="10" height="38" fill="#f2efe8" opacity="0.8"/><ellipse cx="680" cy="720" rx="110" ry="26" fill="#c9b48c"/>
+        <rect x="672" y="720" width="16" height="140" fill="#3a2c1e"/>
+        <ellipse cx="680" cy="860" rx="60" ry="12" fill="#2a2016"/>
+        <rect x="655" y="680" width="10" height="38" fill="#f2efe8" opacity="0.8"/><ellipse cx="980" cy="720" rx="110" ry="26" fill="#c9b48c"/>
+        <rect x="972" y="720" width="16" height="140" fill="#3a2c1e"/>
+        <ellipse cx="980" cy="860" rx="60" ry="12" fill="#2a2016"/>
+        <rect x="955" y="680" width="10" height="38" fill="#f2efe8" opacity="0.8"/><ellipse cx="1280" cy="720" rx="110" ry="26" fill="#c9b48c"/>
+        <rect x="1272" y="720" width="16" height="140" fill="#3a2c1e"/>
+        <ellipse cx="1280" cy="860" rx="60" ry="12" fill="#2a2016"/>
+        <rect x="1255" y="680" width="10" height="38" fill="#f2efe8" opacity="0.8"/></g>
+<rect width="1600" height="1000" fill="url(#vignette)"/>
+</svg>

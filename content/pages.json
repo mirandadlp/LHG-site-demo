@@ -1,0 +1,1103 @@
+{
+  "pages": [
+    {
+      "path": "/offers",
+      "status": "placeholder",
+      "meta": {
+        "title": "Offers",
+        "description": "Offers — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Offers",
+        "title": "Offers",
+        "intro": "[Editable introduction for Offers.]",
+        "image": {
+          "src": "/images/placeholders/lounge.svg",
+          "alt": "Placeholder: hotel lounge — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Offers introduction heading]",
+          "paragraphs": [
+            "[Placeholder — overview for Offers. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Seasonal Offers",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/city.svg",
+                "alt": "Placeholder: London skyline — replace with LHG photography"
+              },
+              "href": "/offers/seasonal",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Stay Longer",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/bedroom.svg",
+                "alt": "Placeholder: guest bedroom — replace with LHG photography"
+              },
+              "href": "/offers/stay-longer",
+              "linkLabel": "Discover"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Make an Enquiry",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/offers/seasonal",
+      "status": "placeholder",
+      "meta": {
+        "title": "Seasonal Offers",
+        "description": "Seasonal Offers — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Offers",
+        "title": "Seasonal Offers",
+        "intro": "[Editable introduction for Seasonal Offers.]",
+        "image": {
+          "src": "/images/placeholders/city.svg",
+          "alt": "Placeholder: London skyline — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Seasonal Offers heading]",
+          "paragraphs": [
+            "[Placeholder — content for Seasonal Offers. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/bedroom.svg",
+            "alt": "Placeholder: guest bedroom — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/offers/stay-longer",
+      "status": "placeholder",
+      "meta": {
+        "title": "Stay Longer",
+        "description": "Stay Longer — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Offers",
+        "title": "Stay Longer",
+        "intro": "[Editable introduction for Stay Longer.]",
+        "image": {
+          "src": "/images/placeholders/bedroom.svg",
+          "alt": "Placeholder: guest bedroom — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Stay Longer heading]",
+          "paragraphs": [
+            "[Placeholder — content for Stay Longer. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/lounge.svg",
+            "alt": "Placeholder: hotel lounge — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/dining",
+      "status": "placeholder",
+      "meta": {
+        "title": "Dining & Drinks",
+        "description": "Dining & Drinks — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Dining",
+        "title": "Dining & Drinks",
+        "intro": "[Editable introduction for Dining & Drinks.]",
+        "image": {
+          "src": "/images/placeholders/dining.svg",
+          "alt": "Placeholder: restaurant — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Dining & Drinks introduction heading]",
+          "paragraphs": [
+            "[Placeholder — overview for Dining & Drinks. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Restaurants & Bars",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/dining.svg",
+                "alt": "Placeholder: restaurant — replace with LHG photography"
+              },
+              "href": "/dining/restaurants-bars",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Afternoon Tea",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/lounge.svg",
+                "alt": "Placeholder: hotel lounge — replace with LHG photography"
+              },
+              "href": "/dining/afternoon-tea",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Private Dining",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/meeting.svg",
+                "alt": "Placeholder: meeting room — replace with LHG photography"
+              },
+              "href": "/dining/private-dining",
+              "linkLabel": "Discover"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Make an Enquiry",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/dining/restaurants-bars",
+      "status": "placeholder",
+      "meta": {
+        "title": "Restaurants & Bars",
+        "description": "Restaurants & Bars — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Dining",
+        "title": "Restaurants & Bars",
+        "intro": "[Editable introduction for Restaurants & Bars.]",
+        "image": {
+          "src": "/images/placeholders/dining.svg",
+          "alt": "Placeholder: restaurant — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Restaurants & Bars heading]",
+          "paragraphs": [
+            "[Placeholder — content for Restaurants & Bars. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/lounge.svg",
+            "alt": "Placeholder: hotel lounge — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/dining/afternoon-tea",
+      "status": "placeholder",
+      "meta": {
+        "title": "Afternoon Tea",
+        "description": "Afternoon Tea — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Dining",
+        "title": "Afternoon Tea",
+        "intro": "[Editable introduction for Afternoon Tea.]",
+        "image": {
+          "src": "/images/placeholders/lounge.svg",
+          "alt": "Placeholder: hotel lounge — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Afternoon Tea heading]",
+          "paragraphs": [
+            "[Placeholder — content for Afternoon Tea. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/detail.svg",
+            "alt": "Placeholder: interior detail — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/dining/private-dining",
+      "status": "placeholder",
+      "meta": {
+        "title": "Private Dining",
+        "description": "Private Dining — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Dining",
+        "title": "Private Dining",
+        "intro": "[Editable introduction for Private Dining.]",
+        "image": {
+          "src": "/images/placeholders/dining.svg",
+          "alt": "Placeholder: restaurant — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Private Dining heading]",
+          "paragraphs": [
+            "[Placeholder — content for Private Dining. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/meeting.svg",
+            "alt": "Placeholder: meeting room — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/meetings-events",
+      "status": "placeholder",
+      "meta": {
+        "title": "Meetings & Events",
+        "description": "Meetings & Events — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Meetings & Events",
+        "title": "Meetings & Events",
+        "intro": "[Editable introduction for Meetings & Events.]",
+        "image": {
+          "src": "/images/placeholders/meeting.svg",
+          "alt": "Placeholder: meeting room — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Meetings & Events introduction heading]",
+          "paragraphs": [
+            "[Placeholder — overview for Meetings & Events. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Meetings & Conferences",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/meeting.svg",
+                "alt": "Placeholder: meeting room — replace with LHG photography"
+              },
+              "href": "/meetings-events/meetings-conferences",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Celebrations",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/dining.svg",
+                "alt": "Placeholder: restaurant — replace with LHG photography"
+              },
+              "href": "/meetings-events/celebrations",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Private Hire",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/arches.svg",
+                "alt": "Placeholder: courtyard — replace with LHG photography"
+              },
+              "href": "/meetings-events/private-hire",
+              "linkLabel": "Discover"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Make an Enquiry",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/meetings-events/meetings-conferences",
+      "status": "placeholder",
+      "meta": {
+        "title": "Meetings & Conferences",
+        "description": "Meetings & Conferences — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Meetings & Events",
+        "title": "Meetings & Conferences",
+        "intro": "[Editable introduction for Meetings & Conferences.]",
+        "image": {
+          "src": "/images/placeholders/meeting.svg",
+          "alt": "Placeholder: meeting room — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Meetings & Conferences heading]",
+          "paragraphs": [
+            "[Placeholder — content for Meetings & Conferences. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/detail.svg",
+            "alt": "Placeholder: interior detail — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/meetings-events/celebrations",
+      "status": "placeholder",
+      "meta": {
+        "title": "Celebrations",
+        "description": "Celebrations — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Meetings & Events",
+        "title": "Celebrations",
+        "intro": "[Editable introduction for Celebrations.]",
+        "image": {
+          "src": "/images/placeholders/dining.svg",
+          "alt": "Placeholder: restaurant — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Celebrations heading]",
+          "paragraphs": [
+            "[Placeholder — content for Celebrations. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/lounge.svg",
+            "alt": "Placeholder: hotel lounge — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/meetings-events/private-hire",
+      "status": "placeholder",
+      "meta": {
+        "title": "Private Hire",
+        "description": "Private Hire — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Meetings & Events",
+        "title": "Private Hire",
+        "intro": "[Editable introduction for Private Hire.]",
+        "image": {
+          "src": "/images/placeholders/arches.svg",
+          "alt": "Placeholder: courtyard — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Private Hire heading]",
+          "paragraphs": [
+            "[Placeholder — content for Private Hire. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/meeting.svg",
+            "alt": "Placeholder: meeting room — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/experiences",
+      "status": "placeholder",
+      "meta": {
+        "title": "Experiences",
+        "description": "Experiences — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Experiences",
+        "title": "Experiences",
+        "intro": "[Editable introduction for Experiences.]",
+        "image": {
+          "src": "/images/placeholders/city.svg",
+          "alt": "Placeholder: London skyline — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Experiences introduction heading]",
+          "paragraphs": [
+            "[Placeholder — overview for Experiences. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Wellness",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/botanical.svg",
+                "alt": "Placeholder: undefined — replace with LHG photography"
+              },
+              "href": "/experiences/wellness",
+              "linkLabel": "Discover"
+            },
+            {
+              "title": "Neighbourhood Guides",
+              "text": "[Editable short description]",
+              "image": {
+                "src": "/images/placeholders/city.svg",
+                "alt": "Placeholder: London skyline — replace with LHG photography"
+              },
+              "href": "/experiences/neighbourhood-guides",
+              "linkLabel": "Discover"
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Make an Enquiry",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/experiences/wellness",
+      "status": "placeholder",
+      "meta": {
+        "title": "Wellness",
+        "description": "Wellness — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Experiences",
+        "title": "Wellness",
+        "intro": "[Editable introduction for Wellness.]",
+        "image": {
+          "src": "/images/placeholders/botanical.svg",
+          "alt": "Placeholder: botanical — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Wellness heading]",
+          "paragraphs": [
+            "[Placeholder — content for Wellness. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/bedroom.svg",
+            "alt": "Placeholder: guest bedroom — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/experiences/neighbourhood-guides",
+      "status": "placeholder",
+      "meta": {
+        "title": "Neighbourhood Guides",
+        "description": "Neighbourhood Guides — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Experiences",
+        "title": "Neighbourhood Guides",
+        "intro": "[Editable introduction for Neighbourhood Guides.]",
+        "image": {
+          "src": "/images/placeholders/city.svg",
+          "alt": "Placeholder: London skyline — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Neighbourhood Guides heading]",
+          "paragraphs": [
+            "[Placeholder — content for Neighbourhood Guides. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/arches.svg",
+            "alt": "Placeholder: courtyard — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/about/our-story",
+      "status": "placeholder",
+      "meta": {
+        "title": "Our Story",
+        "description": "Our Story — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "About LHG",
+        "title": "Our Story",
+        "intro": "[Editable introduction for Our Story.]",
+        "image": {
+          "src": "/images/placeholders/arches.svg",
+          "alt": "Placeholder: courtyard — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable Our Story heading]",
+          "paragraphs": [
+            "[Placeholder — content for Our Story. Confirm with LHG before publishing.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable feature heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/facade.svg",
+            "alt": "Placeholder: hotel facade — replace with LHG photography"
+          },
+          "link": {
+            "label": "Make an Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Plan Your Visit",
+          "text": "[Editable call to action.]",
+          "link": {
+            "label": "Enquire",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/about/our-values",
+      "status": "placeholder",
+      "meta": {
+        "title": "Our Values",
+        "description": "Our Values — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "About LHG",
+        "title": "Our Values",
+        "intro": "[Editable introduction for Our Values.]",
+        "image": {
+          "src": "/images/placeholders/detail.svg",
+          "alt": "Placeholder: interior detail — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable values introduction]",
+          "paragraphs": [
+            "[Placeholder — LHG's values, to be supplied by LHG.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "Value One",
+              "text": "[Editable description of this value.]"
+            },
+            {
+              "title": "Value Two",
+              "text": "[Editable description of this value.]"
+            },
+            {
+              "title": "Value Three",
+              "text": "[Editable description of this value.]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about/leadership",
+      "status": "placeholder",
+      "meta": {
+        "title": "Leadership",
+        "description": "Leadership — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "About LHG",
+        "title": "Leadership",
+        "intro": "[Editable introduction for Leadership.]",
+        "image": {
+          "src": "/images/placeholders/meeting.svg",
+          "alt": "Placeholder: meeting room — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable leadership introduction]",
+          "paragraphs": [
+            "[Placeholder — leadership team details to be supplied by LHG. Do not publish names or roles until confirmed.]"
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "[Name]",
+              "text": "[Role — to be confirmed]"
+            },
+            {
+              "title": "[Name]",
+              "text": "[Role — to be confirmed]"
+            },
+            {
+              "title": "[Name]",
+              "text": "[Role — to be confirmed]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/news",
+      "status": "placeholder",
+      "meta": {
+        "title": "News",
+        "description": "News — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Discover",
+        "title": "News",
+        "intro": "[Editable introduction for News.]",
+        "image": {
+          "src": "/images/placeholders/city.svg",
+          "alt": "Placeholder: London skyline — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "Latest News",
+          "paragraphs": [
+            "[Placeholder — news articles will appear here. Add entries once LHG supplies them.]"
+          ],
+          "align": "center"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "title": "[News headline 1]",
+              "text": "[Date] — [Short summary]",
+              "image": {
+                "src": "/images/placeholders/facade.svg",
+                "alt": "Placeholder: hotel facade — replace with LHG photography"
+              }
+            },
+            {
+              "title": "[News headline 2]",
+              "text": "[Date] — [Short summary]",
+              "image": {
+                "src": "/images/placeholders/dining.svg",
+                "alt": "Placeholder: restaurant — replace with LHG photography"
+              }
+            },
+            {
+              "title": "[News headline 3]",
+              "text": "[Date] — [Short summary]",
+              "image": {
+                "src": "/images/placeholders/lounge.svg",
+                "alt": "Placeholder: hotel lounge — replace with LHG photography"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/careers",
+      "status": "placeholder",
+      "meta": {
+        "title": "Careers",
+        "description": "Careers — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Discover",
+        "title": "Careers",
+        "intro": "[Editable introduction for Careers.]",
+        "image": {
+          "src": "/images/placeholders/lounge.svg",
+          "alt": "Placeholder: hotel lounge — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable careers heading]",
+          "paragraphs": [
+            "[Placeholder — information about working at LHG.]",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "[Editable heading]",
+          "paragraphs": [
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          ],
+          "image": {
+            "src": "/images/placeholders/dining.svg",
+            "alt": "Placeholder: restaurant — replace with LHG photography"
+          },
+          "link": {
+            "label": "Careers Enquiry",
+            "href": "/contact"
+          }
+        },
+        {
+          "type": "cta",
+          "heading": "Current Vacancies",
+          "text": "[Add a link to the LHG careers portal once confirmed.]",
+          "link": {
+            "label": "Contact the Team",
+            "href": "/contact"
+          },
+          "tone": "green"
+        }
+      ]
+    },
+    {
+      "path": "/press",
+      "status": "placeholder",
+      "meta": {
+        "title": "Press & Media",
+        "description": "Press & Media — London Hotel Group. [Editable page description.]"
+      },
+      "hero": {
+        "eyebrow": "Contact",
+        "title": "Press & Media",
+        "intro": "[Editable introduction for Press & Media.]",
+        "image": {
+          "src": "/images/placeholders/detail.svg",
+          "alt": "Placeholder: interior detail — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable press introduction]",
+          "paragraphs": [
+            "[Placeholder — press contact details and media resources, to be supplied by LHG.]"
+          ]
+        },
+        {
+          "type": "cta",
+          "heading": "Media Enquiries",
+          "text": "Use the enquiry form and select “Press & Media”.",
+          "link": {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          "tone": "ivory"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "pages": [
+    {
+      "path": "/privacy-policy",
+      "status": "placeholder",
+      "meta": {
+        "title": "Privacy Policy",
+        "description": "Privacy Policy for the London Hotel Group website."
+      },
+      "hero": {
+        "eyebrow": "Legal",
+        "title": "Privacy Policy"
+      },
+      "sections": [
+        {
+          "type": "legal",
+          "lastUpdated": "[Date]",
+          "clauses": [
+            {
+              "heading": "Important",
+              "paragraphs": [
+                "[PLACEHOLDER — this page must be replaced with text approved by LHG's legal advisers before launch. The headings below are a suggested structure only.]"
+              ]
+            },
+            {
+              "heading": "Who We Are",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Information We Collect",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "How We Use Your Information",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Legal Basis for Processing",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Sharing Your Information",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "International Transfers",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Retention",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Your Rights",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Contact",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/cookie-policy",
+      "status": "placeholder",
+      "meta": {
+        "title": "Cookie Policy",
+        "description": "Cookie Policy for the London Hotel Group website."
+      },
+      "hero": {
+        "eyebrow": "Legal",
+        "title": "Cookie Policy"
+      },
+      "sections": [
+        {
+          "type": "legal",
+          "lastUpdated": "[Date]",
+          "clauses": [
+            {
+              "heading": "Important",
+              "paragraphs": [
+                "[PLACEHOLDER — this page must be replaced with text approved by LHG's legal advisers before launch. The headings below are a suggested structure only.]"
+              ]
+            },
+            {
+              "heading": "What Are Cookies",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Cookies We Use",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Strictly Necessary Cookies",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Analytics Cookies",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Managing Your Preferences",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Changes to This Policy",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/terms",
+      "status": "placeholder",
+      "meta": {
+        "title": "Terms & Conditions",
+        "description": "Terms & Conditions for the London Hotel Group website."
+      },
+      "hero": {
+        "eyebrow": "Legal",
+        "title": "Terms & Conditions"
+      },
+      "sections": [
+        {
+          "type": "legal",
+          "lastUpdated": "[Date]",
+          "clauses": [
+            {
+              "heading": "Important",
+              "paragraphs": [
+                "[PLACEHOLDER — this page must be replaced with text approved by LHG's legal advisers before launch. The headings below are a suggested structure only.]"
+              ]
+            },
+            {
+              "heading": "About These Terms",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Use of This Website",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Intellectual Property",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Bookings",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Liability",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Governing Law",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/accessibility",
+      "status": "placeholder",
+      "meta": {
+        "title": "Accessibility",
+        "description": "Accessibility for the London Hotel Group website."
+      },
+      "hero": {
+        "eyebrow": "Legal",
+        "title": "Accessibility"
+      },
+      "sections": [
+        {
+          "type": "legal",
+          "lastUpdated": "[Date]",
+          "clauses": [
+            {
+              "heading": "Important",
+              "paragraphs": [
+                "[PLACEHOLDER — this page must be replaced with text approved by LHG's legal advisers before launch. The headings below are a suggested structure only.]"
+              ]
+            },
+            {
+              "heading": "Our Commitment",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Measures Taken",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Known Limitations",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            },
+            {
+              "heading": "Feedback and Contact",
+              "paragraphs": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

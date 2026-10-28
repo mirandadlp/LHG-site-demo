@@ -1,0 +1,328 @@
+{
+  "overview": {
+    "path": "/social-responsibility",
+    "status": "placeholder",
+    "meta": {
+      "title": "Social Responsibility",
+      "description": "London Hotel Group's approach to responsible hospitality."
+    },
+    "hero": {
+      "eyebrow": "Social Responsibility",
+      "title": "Responsible Hospitality",
+      "intro": "[Editable introduction to LHG's approach to responsible business.]",
+      "image": {
+        "src": "/images/placeholders/botanical.svg",
+        "alt": "Placeholder: botanical — replace with LHG photography"
+      }
+    },
+    "sections": [
+      {
+        "type": "text",
+        "eyebrow": "Our Approach",
+        "heading": "[Editable heading]",
+        "paragraphs": [
+          "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        ],
+        "align": "center"
+      }
+    ]
+  },
+  "subpages": [
+    {
+      "slug": "our-commitment",
+      "summary": "The principles that guide how LHG operates responsibly.",
+      "image": {
+        "src": "/images/placeholders/arches.svg",
+        "alt": "Placeholder: courtyard — replace with LHG photography"
+      },
+      "path": "/social-responsibility/our-commitment",
+      "status": "placeholder",
+      "meta": {
+        "title": "Our Commitment",
+        "description": "Our Commitment — London Hotel Group. The principles that guide how LHG operates responsibly."
+      },
+      "hero": {
+        "eyebrow": "Social Responsibility",
+        "title": "Our Commitment",
+        "intro": "The principles that guide how LHG operates responsibly.",
+        "image": {
+          "src": "/images/placeholders/arches.svg",
+          "alt": "Placeholder: courtyard — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable our commitment heading]",
+          "paragraphs": [
+            "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "eyebrow": "Focus Area",
+          "heading": "[Editable initiative heading]",
+          "paragraphs": [
+            "[Describe a verified initiative.]",
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          ],
+          "image": {
+            "src": "/images/placeholders/botanical.svg",
+            "alt": "Placeholder: botanical — replace with LHG photography"
+          },
+          "reverse": false
+        },
+        {
+          "type": "list",
+          "heading": "Priorities",
+          "intro": "[Editable — replace with verified priorities.]",
+          "items": [
+            "[Priority one]",
+            "[Priority two]",
+            "[Priority three]",
+            "[Priority four]"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sustainability",
+      "summary": "Environmental initiatives across our hotels.",
+      "image": {
+        "src": "/images/placeholders/botanical.svg",
+        "alt": "Placeholder: botanical — replace with LHG photography"
+      },
+      "path": "/social-responsibility/sustainability",
+      "status": "placeholder",
+      "meta": {
+        "title": "Sustainability",
+        "description": "Sustainability — London Hotel Group. Environmental initiatives across our hotels."
+      },
+      "hero": {
+        "eyebrow": "Social Responsibility",
+        "title": "Sustainability",
+        "intro": "Environmental initiatives across our hotels.",
+        "image": {
+          "src": "/images/placeholders/botanical.svg",
+          "alt": "Placeholder: botanical — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable sustainability heading]",
+          "paragraphs": [
+            "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          ]
+        },
+        {
+          "type": "split",
+          "eyebrow": "Focus Area",
+          "heading": "[Editable initiative heading]",
+          "paragraphs": [
+            "[Describe a verified initiative.]",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ],
+          "image": {
+            "src": "/images/placeholders/city.svg",
+            "alt": "Placeholder: London skyline — replace with LHG photography"
+          },
+          "reverse": true
+        },
+        {
+          "type": "list",
+          "heading": "Priorities",
+          "intro": "[Editable — replace with verified priorities.]",
+          "items": [
+            "[Priority one]",
+            "[Priority two]",
+            "[Priority three]",
+            "[Priority four]"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "community-partnerships",
+      "summary": "How LHG works with local communities and partners.",
+      "image": {
+        "src": "/images/placeholders/city.svg",
+        "alt": "Placeholder: London skyline — replace with LHG photography"
+      },
+      "path": "/social-responsibility/community-partnerships",
+      "status": "placeholder",
+      "meta": {
+        "title": "Community & Partnerships",
+        "description": "Community & Partnerships — London Hotel Group. How LHG works with local communities and partners."
+      },
+      "hero": {
+        "eyebrow": "Social Responsibility",
+        "title": "Community & Partnerships",
+        "intro": "How LHG works with local communities and partners.",
+        "image": {
+          "src": "/images/placeholders/city.svg",
+          "alt": "Placeholder: London skyline — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable community & partnerships heading]",
+          "paragraphs": [
+            "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+          ]
+        },
+        {
+          "type": "split",
+          "eyebrow": "Focus Area",
+          "heading": "[Editable initiative heading]",
+          "paragraphs": [
+            "[Describe a verified initiative.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "image": {
+            "src": "/images/placeholders/arches.svg",
+            "alt": "Placeholder: courtyard — replace with LHG photography"
+          },
+          "reverse": false
+        },
+        {
+          "type": "list",
+          "heading": "Priorities",
+          "intro": "[Editable — replace with verified priorities.]",
+          "items": [
+            "[Priority one]",
+            "[Priority two]",
+            "[Priority three]",
+            "[Priority four]"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "people-wellbeing",
+      "summary": "Supporting the people who make our hotels.",
+      "image": {
+        "src": "/images/placeholders/lounge.svg",
+        "alt": "Placeholder: hotel lounge — replace with LHG photography"
+      },
+      "path": "/social-responsibility/people-wellbeing",
+      "status": "placeholder",
+      "meta": {
+        "title": "People & Wellbeing",
+        "description": "People & Wellbeing — London Hotel Group. Supporting the people who make our hotels."
+      },
+      "hero": {
+        "eyebrow": "Social Responsibility",
+        "title": "People & Wellbeing",
+        "intro": "Supporting the people who make our hotels.",
+        "image": {
+          "src": "/images/placeholders/lounge.svg",
+          "alt": "Placeholder: hotel lounge — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable people & wellbeing heading]",
+          "paragraphs": [
+            "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+            "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ]
+        },
+        {
+          "type": "split",
+          "eyebrow": "Focus Area",
+          "heading": "[Editable initiative heading]",
+          "paragraphs": [
+            "[Describe a verified initiative.]",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ],
+          "image": {
+            "src": "/images/placeholders/botanical.svg",
+            "alt": "Placeholder: botanical — replace with LHG photography"
+          },
+          "reverse": true
+        },
+        {
+          "type": "list",
+          "heading": "Priorities",
+          "intro": "[Editable — replace with verified priorities.]",
+          "items": [
+            "[Priority one]",
+            "[Priority two]",
+            "[Priority three]",
+            "[Priority four]"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "responsible-operations",
+      "summary": "Responsible sourcing, governance and day-to-day operations.",
+      "image": {
+        "src": "/images/placeholders/detail.svg",
+        "alt": "Placeholder: interior detail — replace with LHG photography"
+      },
+      "path": "/social-responsibility/responsible-operations",
+      "status": "placeholder",
+      "meta": {
+        "title": "Responsible Operations",
+        "description": "Responsible Operations — London Hotel Group. Responsible sourcing, governance and day-to-day operations."
+      },
+      "hero": {
+        "eyebrow": "Social Responsibility",
+        "title": "Responsible Operations",
+        "intro": "Responsible sourcing, governance and day-to-day operations.",
+        "image": {
+          "src": "/images/placeholders/detail.svg",
+          "alt": "Placeholder: interior detail — replace with LHG photography"
+        }
+      },
+      "sections": [
+        {
+          "type": "text",
+          "heading": "[Editable responsible operations heading]",
+          "paragraphs": [
+            "[Proposed content section — not a verified statement about LHG's existing initiatives. Replace with information supplied by LHG.]",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          ]
+        },
+        {
+          "type": "split",
+          "eyebrow": "Focus Area",
+          "heading": "[Editable initiative heading]",
+          "paragraphs": [
+            "[Describe a verified initiative.]",
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+          ],
+          "image": {
+            "src": "/images/placeholders/city.svg",
+            "alt": "Placeholder: London skyline — replace with LHG photography"
+          },
+          "reverse": false
+        },
+        {
+          "type": "list",
+          "heading": "Priorities",
+          "intro": "[Editable — replace with verified priorities.]",
+          "items": [
+            "[Priority one]",
+            "[Priority two]",
+            "[Priority three]",
+            "[Priority four]"
+          ]
+        }
+      ]
+    }
+  ]
+}

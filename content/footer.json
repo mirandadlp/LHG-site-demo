@@ -1,0 +1,40 @@
+{
+  "tagline": "[Editable footer statement about London Hotel Group — to be supplied by LHG.]",
+  "columns": [
+    {
+      "heading": "Stay",
+      "links": [
+        { "label": "Our Hotels", "href": "/hotels" },
+        { "label": "Offers", "href": "/offers" },
+        { "label": "Dining & Drinks", "href": "/dining" },
+        { "label": "Meetings & Events", "href": "/meetings-events" }
+      ]
+    },
+    {
+      "heading": "Company",
+      "links": [
+        { "label": "About LHG", "href": "/about" },
+        { "label": "Services", "href": "/services" },
+        { "label": "Social Responsibility", "href": "/social-responsibility" },
+        { "label": "News", "href": "/news" },
+        { "label": "Careers", "href": "/careers" }
+      ]
+    },
+    {
+      "heading": "Help",
+      "links": [
+        { "label": "Contact Us", "href": "/contact" },
+        { "label": "Press & Media", "href": "/press" },
+        { "label": "Accessibility", "href": "/accessibility" }
+      ]
+    }
+  ],
+  "contactHeading": "Contact",
+  "legal": [
+    { "label": "Privacy Policy", "href": "/privacy-policy" },
+    { "label": "Cookie Policy", "href": "/cookie-policy" },
+    { "label": "Terms & Conditions", "href": "/terms" }
+  ],
+  "cookieSettingsLabel": "Cookie Settings",
+  "copyright": "© {year} London Hotel Group. All rights reserved."
+}
