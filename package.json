@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "check:content": "node scripts/check-content.mjs",
     "generate:placeholders": "node scripts/generate-placeholders.mjs",
-    "export:html": "node scripts/export-html.mjs"
+    "export:html": "node scripts/export-html.mjs",
+    "export:html:single": "node scripts/export-html.mjs --single"
   },
   "dependencies": {
     "framer-motion": "^14.7.1",

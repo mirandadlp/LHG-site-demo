@@ -34,6 +34,8 @@
   var header = document.querySelector("header");
   var menuButton = document.querySelector('button[aria-controls="site-navigation"]');
   var drawerOpen = false;
+  var root = null;
+  var closeDrawer = function () {};
   if (header) {
     var bar = header.firstElementChild;
     var cta = header.querySelector("a.rounded-full");
@@ -60,7 +62,7 @@
 
   // ---------------- Slide-out navigation ----------------
   if (menuButton) {
-    var root = el("div", "fixed inset-0 z-50");
+    root = el("div", "fixed inset-0 z-50");
     root.id = "site-navigation";
     root.hidden = true;
     var backdrop = el("div", "absolute inset-0 bg-forest-deep/55 backdrop-blur-[2px]");
@@ -163,7 +165,7 @@
         });
       });
     };
-    var close = function () {
+    var close = function (restoreFocus) {
       if (!drawerOpen) return;
       drawerOpen = false;
       backdrop.style.opacity = "0";
@@ -171,11 +173,12 @@
       document.body.style.overflow = "";
       menuButton.setAttribute("aria-expanded", "false");
       setTimeout(function () { root.hidden = true; }, reduceMotion ? 0 : 700);
-      menuButton.focus();
+      if (restoreFocus !== false) menuButton.focus();
     };
+    closeDrawer = close;
     menuButton.addEventListener("click", open);
-    closeBtn.addEventListener("click", close);
-    backdrop.addEventListener("click", close);
+    closeBtn.addEventListener("click", function () { close(); });
+    backdrop.addEventListener("click", function () { close(); });
     document.addEventListener("keydown", function (e) {
       if (!drawerOpen) return;
       if (e.key === "Escape") { e.preventDefault(); close(); return; }
@@ -188,13 +191,21 @@
     });
   }
 
+  // ---------------- Page-level behaviour (re-run after every page switch in single-file mode) ----------------
+  var slideTimer = null;
+  var lightbox = null;
+
+  function initPage() {
+  clearTimeout(slideTimer);
+  if (lightbox) { lightbox.remove(); lightbox = null; }
+
   // ---------------- Hero slideshow ----------------
   var hero = document.querySelector('section[aria-roledescription="carousel"]');
   if (hero && D.slides.length > 1) {
     var current = hero.querySelector('[aria-roledescription="slide"]');
     var dots = Array.prototype.slice.call(hero.querySelectorAll('button[aria-label^="Show slide"]'));
     var pauseBtn = hero.querySelector('button[aria-label$="slideshow"]');
-    var index = 0, paused = reduceMotion, timer = null;
+    var index = 0, paused = reduceMotion;
 
     var kenBurns = function (slide) {
       var inner = slide.firstElementChild;
@@ -213,7 +224,7 @@
       if (next === index) return;
       var slide = current.cloneNode(true);
       var img = slide.querySelector("img");
-      img.src = D.slides[next].src;
+      img.src = (D.images && D.images[D.slides[next].src]) || D.slides[next].src;
       img.alt = D.slides[next].alt;
       slide.setAttribute("aria-label", next + 1 + " of " + D.slides.length);
       slide.style.opacity = "0";
@@ -234,8 +245,8 @@
       schedule();
     };
     var schedule = function () {
-      clearTimeout(timer);
-      if (!paused) timer = setTimeout(function () { show((index + 1) % D.slides.length); }, D.interval);
+      clearTimeout(slideTimer);
+      if (!paused) slideTimer = setTimeout(function () { show((index + 1) % D.slides.length); }, D.interval);
     };
     var setPaused = function (p) {
       paused = p;
@@ -268,6 +279,7 @@
       '<button type="button" data-step="1" class="absolute right-2 top-1/2 -translate-y-1/2 p-3 text-4xl font-light text-ivory md:right-6" aria-label="Next image">›</button>' +
       '<p class="absolute bottom-5 left-1/2 -translate-x-1/2 text-xs tracking-[0.2em] text-ivory/70"></p>';
     document.body.appendChild(box);
+    lightbox = box;
     var bigImg = box.querySelector("img"), counter = box.querySelector("p"), active = 0, opener = null;
     var showImg = function (i) {
       active = (i + images.length) % images.length;
@@ -289,7 +301,7 @@
       else if (t || e.target === box) closeBox();
     });
     document.addEventListener("keydown", function (e) {
-      if (box.hidden) return;
+      if (box.hidden || lightbox !== box) return;
       if (e.key === "Escape") closeBox();
       if (e.key === "ArrowRight") showImg(active + 1);
       if (e.key === "ArrowLeft") showImg(active - 1);
@@ -307,4 +319,51 @@
       live.focus();
     });
   });
+  }
+
+  if (!D.single) {
+    initPage();
+    return;
+  }
+
+  // ---------------- Single-file mode: every page lives in a <template>; the URL hash picks one ----------------
+  var main = document.getElementById("main");
+  var templates = {};
+  Array.prototype.forEach.call(document.querySelectorAll("template[data-route]"), function (t) {
+    templates[t.getAttribute("data-route")] = t;
+  });
+
+  // Same-page anchors (#content, #enquire, skip link) scroll instead of changing the page.
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var href = a.getAttribute("href");
+    if (href.indexOf("#/") === 0) return;
+    var target = document.getElementById(href.slice(1));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+    }
+  });
+
+  function route() {
+    var hash = decodeURIComponent(location.hash.slice(1)) || "/";
+    var parts = hash.split("#");
+    var path = parts[0] || "/";
+    var t = templates[path] || templates["/404"];
+    var content = t.content.cloneNode(true);
+    Array.prototype.forEach.call(content.querySelectorAll("img[data-img]"), function (img) {
+      img.src = D.images[img.getAttribute("data-img")];
+    });
+    main.replaceChildren(content);
+    document.title = t.getAttribute("data-title");
+    if (drawerOpen && root) closeDrawer(false);
+    var anchor = parts[1] && document.getElementById(parts[1]);
+    if (anchor) anchor.scrollIntoView();
+    else window.scrollTo(0, 0);
+    window.dispatchEvent(new Event("scroll"));
+    initPage();
+  }
+  window.addEventListener("hashchange", route);
+  route();
 })();

@@ -50,13 +50,17 @@ Open http://localhost:3000.
 
 ## Standalone HTML version
 
-To get plain `.html` files that open straight from disk, with no Node.js or server needed (for example, to email, review or upload to basic hosting):
+To get plain HTML that opens straight from disk, with no Node.js or server needed (for example, to email, review or upload to basic hosting):
 
 ```bash
-npm run build && npm run export:html
+npm run build && npm run export:html:single
 ```
 
-This writes one self-contained file per page to `html-export/` (`index.html` is the homepage). CSS and images are embedded and pages link to each other, so keep the files together in one folder. Fonts load from Google Fonts. The menu, slideshow, header and gallery work through a small script (`scripts/export-runtime.js`). Because there's no server, the enquiry form shows the "not yet connected" message instead of sending. Re-run the command after editing content.
+This writes the **whole site as one file**, `html-export/lhg-website.html` (about 0.5 MB). Every page is inside it and the menu switches between them (addresses look like `lhg-website.html#/about`). CSS and images are embedded; fonts load from Google Fonts.
+
+To get one file per page instead, run `npm run export:html`. This writes to `html-export/pages/` (`index.html` is the homepage); keep those files together in one folder.
+
+In both versions the menu, slideshow, header and gallery work through a small script (`scripts/export-runtime.js`). Because there's no server, the enquiry form shows the "not yet connected" message instead of sending. Re-run the command after editing content.
 
 ## Project structure
 
