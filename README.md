@@ -1,5 +1,7 @@
 # London Hotel Group — Website
 
+> **Just want to look at the website?** Open **`lhg-website.html`** (in this top folder) in any web browser: download the ZIP from GitHub (green **Code** button → **Download ZIP**), unzip it, and double-click `lhg-website.html`. The whole site is in that one file. All the other files are the source code it's built from.
+
 The website for **London Hotel Group (LHG)**: an editorial, green-led luxury hospitality site with full-screen photography, a left-hand slide-out menu with nested submenus, and every word, image and link editable from simple content files.
 
 > **Status: draft build.** No LHG facts have been verified yet. The build environment could not reach lhg.co.uk or the reference site, so all company details, hotels and photography are clearly marked placeholders. See **[CONTENT-STATUS.md](CONTENT-STATUS.md)** for what needs supplying before launch.
@@ -56,7 +58,7 @@ To get plain HTML that opens straight from disk, with no Node.js or server neede
 npm run build && npm run export:html:single
 ```
 
-This writes the **whole site as one file**, `html-export/lhg-website.html` (about 0.5 MB). Every page is inside it and the menu switches between them (addresses look like `lhg-website.html#/about`). CSS and images are embedded; fonts load from Google Fonts.
+This writes the **whole site as one file**, `lhg-website.html` in the top folder (about 0.5 MB). That file is committed to the repository so it's included in GitHub downloads; re-run the command and commit after changing content so it stays up to date. Every page is inside it and the menu switches between them (addresses look like `lhg-website.html#/about`). CSS and images are embedded; fonts load from Google Fonts.
 
 To get one file per page instead, run `npm run export:html`. This writes to `html-export/pages/` (`index.html` is the homepage); keep those files together in one folder.
 

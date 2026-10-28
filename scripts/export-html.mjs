@@ -1,7 +1,7 @@
 // Exports the built site as plain HTML that opens directly in a browser, with no server.
 //
 //   npm run export:html          -> html-export/pages/<page>.html  (one self-contained file per page)
-//   npm run export:html:single   -> html-export/lhg-website.html  (the whole site in ONE file)
+//   npm run export:html:single   -> lhg-website.html  (the whole site in ONE file, committed so it is in GitHub downloads)
 //
 // CSS and images are embedded; fonts load from Google Fonts. Run `npm run build` first.
 import { spawn } from "node:child_process";
@@ -141,7 +141,6 @@ const head =
   `<style>${css}</style>`;
 
 if (SINGLE) {
-  mkdirSync(OUT, { recursive: true });
   const templates = [];
   for (const route of routes) {
     const html = await (await fetch(BASE + route)).text();
@@ -167,10 +166,10 @@ if (SINGLE) {
   shell = shell.replace("</head>", `${head}</head>`);
   shell = shell.replace("</body>", `${templates.join("")}${script(runtimeData())}</body>`);
 
-  const file = join(OUT, "lhg-website.html");
+  const file = join(ROOT, "lhg-website.html");
   writeFileSync(file, shell);
   stop();
-  console.log(`✓ Exported ${routes.length} pages into ONE file: html-export/lhg-website.html (${(shell.length / 1024 / 1024).toFixed(1)} MB).`);
+  console.log(`✓ Exported ${routes.length} pages into ONE file: lhg-website.html (${(shell.length / 1024 / 1024).toFixed(1)} MB).`);
   process.exit(0);
 }
 
