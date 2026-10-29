@@ -1,165 +1,123 @@
-# London Hotel Group — Website
+# London Hotel Group website
 
-> **Just want to look at the website?** Open **`lhg-website.html`** (in this top folder) in any web browser: download the ZIP from GitHub (green **Code** button → **Download ZIP**), unzip it, and double-click `lhg-website.html`. The whole site is in that one file. All the other files are the source code it's built from.
+A static website for London Hotel Group (LHG), built with plain HTML, CSS and vanilla JavaScript. It has no framework, no build step and no npm: the files in this repository are the website, and they deploy to GitHub Pages as they are.
 
-The website for **London Hotel Group (LHG)**: an editorial, green-led luxury hospitality site with full-screen photography, a left-hand slide-out menu with nested submenus, and every word, image and link editable from simple content files.
+## What's where
 
-> **Status: draft build.** No LHG facts have been verified yet. The build environment could not reach lhg.co.uk or the reference site, so all company details, hotels and photography are clearly marked placeholders. See **[CONTENT-STATUS.md](CONTENT-STATUS.md)** for what needs supplying before launch.
+```
+index.html                    Home
+about.html                    About LHG
+hotels.html                   Our Hotels (carousel, hotel list, "Also in the collection")
+hotels/*.html                 One page per hotel
+coming-soon.html              Tooting Street Aparthotel
+group-bookings.html           Group Bookings (includes an inline inquiry form)
+social-responsibility.html    Social Responsibility
+news.html, news/*.html        News & Insights and one page per article
+careers.html                  Careers
+contact.html                  Contact Us (includes an inline inquiry form)
+privacy.html                  Privacy, Cookies and Terms
+404.html                      "Page not found" (GitHub Pages uses it automatically)
+assets/css/styles.css         All styles. Brand colours and fonts are CSS variables at the top
+assets/js/partials.js         Header, slide-out menu, footer, inquiry panel and form (defined once)
+assets/js/main.js             All behaviour, plus the FORM_ENDPOINT setting at the top
+assets/images/                Logo, icons and photos (see IMAGE-LIST.md)
+sitemap.xml, robots.txt       For search engines
+.nojekyll                     Tells GitHub Pages to serve the files as they are
+```
 
-| Document | For |
-|---|---|
-| [CONTENT-GUIDE.md](CONTENT-GUIDE.md) | Editors: changing text, images, hotels, menu items and pages |
-| [CONTENT-STATUS.md](CONTENT-STATUS.md) | What's verified, what's placeholder, the provisional navigation tree, launch checklist |
-| [BRAND-GUIDE.md](BRAND-GUIDE.md) and `/brand-guide` | Colour, typography, buttons, cards, photography and spacing |
+Every link is relative, so the site works at `https://<user>.github.io/<repo>/` and on a custom domain.
 
-## Tech stack
+## Previewing locally
 
-- **Next.js 16** (App Router, React 19, Cache Components) with **TypeScript**
-- **Tailwind CSS 4** with brand tokens in `app/globals.css`
-- **Framer Motion** for the menu, slideshow and scroll reveals (respects reduced-motion settings)
-- **Lucide** icons
-- **Zod** to validate content files and form submissions
-- Fonts: Cormorant Garamond + Inter via `next/font` (self-hosted at build time)
-
-Every page is pre-rendered as static HTML. The only server code is the enquiry form endpoint.
-
-## Getting started
-
-Requires Node.js 20.9 or later.
+From the repository folder:
 
 ```bash
-npm install
+python3 -m http.server 8000
 ```
+
+Then open http://localhost:8000. Opening the HTML files straight from disk also mostly works, but some browsers restrict scripts on `file://` pages, so the local server is more reliable.
+
+## Editing copy
+
+Page text lives in that page's HTML file. Open it in any text editor, find the sentence, change it and save. Each section is a `<section>` with an `id` (for example `id="welcome"`), and the text inside follows the same pattern: a gold label (`<span class="label">`), a heading (`<h2 class="h2">`), then paragraphs in `<div class="body">`.
+
+**Shared parts** (header, menu, footer, inquiry panel) are in `assets/js/partials.js`, not in the pages:
+
+- Contact details and social links: `CONTACT` and `SOCIAL` at the top.
+- The hotel list used by the menu, footer and the form's "Preferred hotel" list: `HOTELS`.
+- Menu and header navigation, including dropdown sub-items: `NAV`.
+
+**Placeholder copy** is marked in two ways: an HTML comment beginning `<!-- TODO:` sits beside it, and it shows on the page with a small dashed "Placeholder" tag (the `todo` class). When the approved text arrives, replace the text, delete the comment and remove `todo` from the element's `class`. To list everything still outstanding:
 
 ```bash
-cp .env.example .env.local
+grep -rn "TODO" --include=*.html .
 ```
 
-```bash
-npm run dev
+Spelling: use "Inquire / Inquiry / Inquiries" (American) for anything about inquiries; everything else is British English.
+
+**Adding a hotel:** copy one of the files in `hotels/`, change its text, add it to `HOTELS` in `partials.js`, then add a card to the carousel and a row to the list in `hotels.html`. Update each hotel page's "Next property" block so the chain still loops, and add the new page to `sitemap.xml`.
+
+**Adding a news article:** copy a file in `news/`, change the text, then add a card to the News section of `index.html` and a row to `news.html`, and add it to `sitemap.xml`.
+
+## Swapping in photos
+
+At the moment every photo is a stone-coloured placeholder. Each one looks like this:
+
+```html
+<div class="img"><!-- IMAGE: hotel-wembley.jpg · 1:1 · 1600×1600 --><div class="ph" data-img="hotel-wembley.jpg" data-alt="London Wembley Hotel" aria-hidden="true"></div></div>
 ```
 
-Open http://localhost:3000.
+1. Save the photo in `assets/images/` using the file name in the comment. `assets/images/IMAGE-LIST.md` lists every expected file, its shape, a suggested size and where it appears.
+2. Replace the inner placeholder (`<div class="ph" … ></div>`, or `<span class="ph" …></span>` in gallery buttons) with an `<img>`, keeping the alt text from `data-alt`:
 
-| Command | What it does |
-|---|---|
-| `npm run dev` | Development server with live reload (content edits appear instantly) |
-| `npm run build` | Checks content, then builds the production site |
-| `npm run start` | Serves the production build |
-| `npm run lint` / `npm run typecheck` | Code quality checks |
-| `npm run check:content` | Checks every internal link, image path and page path in `content/` |
-| `npm run generate:placeholders` | Regenerates the illustrated placeholder images |
+   ```html
+   <div class="img"><img src="assets/images/hotel-wembley.jpg" alt="London Wembley Hotel" width="1600" height="1600" loading="lazy" decoding="async"></div>
+   ```
 
-## Standalone HTML version
+   On pages inside `hotels/` and `news/`, start the path with `../` (`../assets/images/…`).
+3. The first photo on each page (the large band under the page title) should not have `loading="lazy"`; use `fetchpriority="high"` instead. The comment beside each band says so.
+4. The photos on the Home "Responsibility" tabs carry two extra attributes so the tabs can switch between them. Keep them on the `<img>`: `class="tab-img"` (plus `on` for the first one) and `data-tab-img="…"`.
+5. Gallery lightbox images are listed in a hidden `<div id="home-gallery">` / `<div id="about-gallery">` near the gallery section. Swap those placeholders in the same way.
 
-To get plain HTML that opens straight from disk, with no Node.js or server needed (for example, to email, review or upload to basic hosting):
+The `.img` box sets each photo's shape, and the photo fills it with `object-fit: cover`. Any size will fit, but keep the subject near the centre. Export at the suggested size and around 80% JPG/WebP quality so the pages stay fast.
 
-```bash
-npm run build && npm run export:html:single
+Only use photos LHG owns or has licensed.
+
+## Inquiry forms (FORM_ENDPOINT)
+
+GitHub Pages can't process form submissions, so the forms post to an outside form service. Set the address once, at the top of `assets/js/main.js`:
+
+```js
+const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
 ```
 
-This writes the **whole site as one file**, `lhg-website.html` in the top folder (about 0.5 MB). That file is committed to the repository so it's included in GitHub downloads; re-run the command and commit after changing content so it stays up to date. Every page is inside it and the menu switches between them (addresses look like `lhg-website.html#/about`). CSS and images are embedded; fonts load from Google Fonts.
+- **With an endpoint:** forms are sent with `fetch` as standard form data (`Accept: application/json`). This works with Formspree and similar services. Visitors see a thank-you message on success, or an error message with an email link if sending fails.
+- **Without an endpoint** (`""`, the current setting): submitting opens the visitor's email app with a pre-filled message to sales@lhg.co.uk.
 
-To get one file per page instead, run `npm run export:html`. This writes to `html-export/pages/` (`index.html` is the homepage); keep those files together in one folder.
+The same setting is used by the "Stories of LHG" newsletter sign-up on the Home page.
 
-In both versions the menu, slideshow, header and gallery work through a small script (`scripts/export-runtime.js`). Because there's no server, the enquiry form shows the "not yet connected" message instead of sending. Re-run the command after editing content.
+To set up Formspree: create a free form at formspree.io, set its email to sales@lhg.co.uk, copy the form URL into `FORM_ENDPOINT`, then send a test inquiry from the live site.
 
-## Project structure
+Every "Inquire" button opens the slide-in panel. Its title and pre-selected options come from attributes on the button:
 
-```
-app/                     Routes (one folder per URL)
-  page.tsx               Homepage
-  about/ hotels/ hotels/[slug]/ services/ contact/
-  social-responsibility/ social-responsibility/[slug]/
-  [...slug]/             Every page defined in content/pages.json and legal.json
-  brand-guide/           Visual brand guide (not indexed)
-  api/contact/route.ts   Enquiry form endpoint
-  sitemap.ts robots.ts not-found.tsx layout.tsx globals.css
-components/
-  layout/                Header, NavDrawer (slide-out menu), Footer, Logo
-  sections/              Hero slideshow, page hero, section renderer, cards, gallery, contact
-  forms/                 Contact form
-  privacy/               Cookie consent + consent-gated analytics
-  ui/                    Buttons, images, reveal animation, notices
-content/                 ALL editable content (JSON) — see CONTENT-GUIDE.md
-lib/
-  schema.ts              Content schemas (what each JSON file may contain)
-  content.ts             Loads + validates content; the single place to swap in a CMS
-  enquiry.ts             Form validation rules
-public/images/           Images (placeholders in public/images/placeholders)
-scripts/                 Content checker, placeholder generator
+```html
+<button class="ob" type="button" data-inquire="Inquire about London Wembley Hotel" data-type="Group accommodation" data-hotel="London Wembley Hotel">Inquire</button>
 ```
 
-## How content works
+## Deploying to GitHub Pages
 
-- All copy, images, navigation, hotels and footer links live in `content/*.json`.
-- `lib/content.ts` loads and validates each file against `lib/schema.ts` at build time. A typo produces a readable error naming the file and field, instead of a broken page.
-- `npm run check:content` (also run automatically before every build) verifies that every internal link points at a real page and every image exists.
-- Pages are assembled from reusable **section types** (`text`, `split`, `cards`, `list`, `gallery`, `links`, `cta`, `properties`, `legal`), so new pages need no code.
-- The "Our Hotels" menu, homepage cards, hotel pages, the form's hotel dropdown and the sitemap are all generated from `properties.json`.
+1. Push this repository to GitHub, with these files on the `main` branch.
+2. On GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Source: Deploy from a branch**, then **Branch: `main`** and folder **`/ (root)`**, and click **Save**.
+4. After a minute or two the site is live at `https://<user>.github.io/<repo>/`.
 
-### Adding a CMS later
+**Site address in SEO tags.** `sitemap.xml`, `robots.txt` and each page's `<link rel="canonical">` and `og:` tags use the full address `https://mirandadlp.github.io/LHG-site-demo/`. If the site moves (for example to a custom domain), find and replace that address in every file.
 
-All components receive content through `lib/content.ts`. To move to a headless CMS (Sanity, Contentful, Payload, Storyblok…), model the same shapes as `lib/schema.ts`, fetch them in `lib/content.ts`, and keep the Zod validation. No page or component needs to change. Until then, editors can edit the JSON directly in GitHub's web editor, and the hosting provider rebuilds automatically on each commit (with a preview deployment per branch, so changes can be checked before they go live).
+**Custom domain:** in Settings → Pages, enter the domain under **Custom domain** and follow GitHub's DNS instructions, then update the site address as above.
 
-## Enquiry form
+## Design system
 
-`POST /api/contact` validates every field on the server (Zod), then delivers the enquiry. Spam and abuse protection:
-
-- hidden honeypot field
-- minimum fill time (3 seconds)
-- same-origin check
-- request size limit (20 KB)
-- per-IP rate limit (5 per 10 minutes, in memory, per server instance; use a shared store such as Upstash Redis if you run several instances)
-
-**Delivery** is configured with environment variables. Set **one** option:
-
-| Option | Variables |
-|---|---|
-| Webhook (Zapier, Make, Power Automate, CRM…) | `CONTACT_WEBHOOK_URL`, optional `CONTACT_WEBHOOK_SECRET` (sent as a Bearer token) |
-| Email via [Resend](https://resend.com) | `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL` |
-
-If neither is set, the form **does not pretend to succeed**: it tells visitors the form isn't connected yet and points them to the phone and email details. If delivery fails, visitors see an error and nothing is lost silently.
-
-For stronger bot protection, Cloudflare Turnstile or hCaptcha can be added to `components/forms/ContactForm.tsx` and verified in `app/api/contact/route.ts`.
-
-## Cookies & analytics
-
-- A consent banner appears on the first visit (Accept all / Necessary only / Manage). The choice is stored for 180 days in the `lhg_consent` cookie; "Cookie Settings" in the footer reopens it.
-- Google Analytics 4 loads **only** if `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set **and** the visitor accepted analytics. Other tools can be gated the same way in `components/privacy/Analytics.tsx`.
-
-## SEO & accessibility
-
-- Unique title, description, canonical URL and Open Graph data per page, all from content files
-- `sitemap.xml` generated from content; `robots.txt` blocks indexing unless `ALLOW_INDEXING=true` (so previews are never indexed)
-- Semantic landmarks, skip link, breadcrumbs, visible focus states, alt text on every image
-- Menu: focus trap, Escape to close, click-outside to close, focus returned to the menu button, scroll lock
-- Slideshow can be paused; all animation is disabled for reduced-motion users
-- Colour pairs meet WCAG AA (see BRAND-GUIDE.md)
-- Security headers set in `next.config.ts`
-
-## Deployment
-
-The simplest route is **Vercel** (the makers of Next.js):
-
-1. Import the GitHub repository at vercel.com/new. No build settings need changing.
-2. Add the environment variables from `.env.example` (Production and Preview).
-3. Only on Production: set `ALLOW_INDEXING=true` and `NEXT_PUBLIC_SITE_URL` to the live domain.
-4. Add the custom domain.
-
-Each push to the main branch deploys the live site; every other branch gets its own preview URL.
-
-It also runs anywhere Node.js runs (`npm run build && npm run start`, port 3000), including Netlify, AWS Amplify, Azure Static Web Apps (hybrid) and Docker.
-
-## Testing performed
-
-On this build:
-
-- every route in the sitemap returns 200, and unknown URLs return a real 404
-- every page title is unique
-- no horizontal scrolling at 360px width on all pages
-- no browser console errors
-- menu open/close/Escape/outside-click/focus-trap/focus-return, plus three-level drill-down and back
-- slideshow pause, gallery lightbox (keyboard), cookie banner and settings
-- enquiry form: field errors, "not configured" message, and successful delivery to a test webhook
-- API responses for validation errors, honeypot, too-fast submissions, cross-origin requests, malformed JSON and rate limiting
+- Colours are CSS variables at the top of `styles.css`: heritage green, forest, sage, ivory, paper, stone, gold, gold-text and charcoal. `--gold-text` is set to `#836B44`, a slightly darker version of the brand's `#8A7148`, so that 12px labels meet WCAG AA contrast.
+- Fonts come from Google Fonts: Montserrat for titles and headings; Inter for body text, navigation, buttons and labels.
+- Reusable section layouts: `.b-sq`, `.b-pair`, `.b-feature`, `.b-collage`, `.b-edit`, `.b-gallery` and `.b-stories`. Below 900px they all stack into one column.
+- Animations: add `rv` to a section to have it reveal on scroll. Everything respects the visitor's reduced-motion setting.
