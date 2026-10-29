@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirandadlp.github.io/LHG-site-demo/sitemap.xml
